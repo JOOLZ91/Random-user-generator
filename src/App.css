@@ -1,38 +1,113 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  max-width: 1440px;
+}
+
+/* html {
+  margin: 0 auto;
+  max-width: 1440px;
+  background-color: white;
+} */
+
+header {
+  position: relative;
+  background-image: url("./images/robot.jpg");
+  height: 60vh;
+  background-color: rgb(56, 121, 56);
+  border-radius: 30px;
+}
+
+div.header {
+  border-radius: 30px;
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0.7;
+}
+
+div.line {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  height: 15vh;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.5;
+  width: 100%;
+}
+
+p.head {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Montserrat';
+}
+
+button.btn {
+  display:block;
+  font-size: 50px;
+  font-family: 'Montserrat';
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border: 0px;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: .5s;
+  border: 2px solid black
+    
+}
+
+button.btn:hover {
+  color: rgb(86, 86, 99);
+  background-color: white;
+
+}
+
+div.wrapper {
+  margin: 20px;
+}
+
+img {
+  padding: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
+h4 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div.user {
+  font-size: 30px;
+  font-family: 'Montserrat';
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+div.user:nth-child(odd) {
+  background-color: black;
   color: white;
+  border-radius: 30px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.footer {
+  position: absolute;
+  bottom: 15px;
+  left: 1200px;
+  opacity: 0.5;
+  width: 100%;
+  color: white;
+  font-family: 'Montserrat'
 }
